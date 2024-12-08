@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --navbar:#000000;
+    --bodycolor: #e49f37;
+    --font1:#e5a648;
+    --font2:#e6aa3f;
+    --font3:#181818;
+    --font4:#eaedee;
+    --font5:#eadddd;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    /* color: black; */
+}
+
+
+.nav{
+    height: 10rem;
+    z-index: 3;
+    width: 85vw;
+    /* border: 2px solid black; */
+    margin: auto;
+    position: relative;
+    box-shadow: 1px 1px 7px rgb(116, 111, 111);
+}
+.upper-div{
+    height: 68%;
+    width: 100%;
+    display: flex;
+    /* border: 2px solid red; */
+    background-color: black;
+
+    & .left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        /* border: 2px solid black; */
+        background-color: var(--font3);
+
+        & .logo{
+            height: 80%;
+        }
+        .myName{
+            font-size: 40px;
+            color: white;
+            font-family: 'Gill Sans';
+        }
+        
+    }
+    .right{
+        background-color: var(--font3);
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: end;
+        
+        
+        & .heaven{
+            width: 28%;
+            height: 54%;
+            & i{
+            font-size: 40px;
+            color: var(--bodycolor);
+        }
+        & h4{
+            color: white;
+        }
+        & label{
+            color: rgb(163, 163, 168);
+        }
+        }
+
+        & .developer{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 70%;
+            /* border: 1px solid; */
+            font-family: "Lora", serif;
+            font-size: 20px;
+            
+            & h1{
+                color: transparent;
+                background-image: url("https://img.freepik.com/free-vector/gray-line-drawings-organic-shapes-background_1409-3947.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723507200&semt=ais_hybrid");
+                background-clip: text;
+            }
+
+            & h1::first-letter{
+                font-size: 80px;
+            }
+           
+        }
+
+        
+    }
+    
+}
+
+.lower-div{
+    height:32% ;
+    width: 100%;
+    display: flex;
+    background-color: var(--font4);
+    justify-content: space-between;
+
+    .left{
+        width: 60%;
+        height: 100%;
+        /* border: 2px solid; */
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+             
+            li{
+                display: flex;
+                align-items: center;
+                height: 100%;
+
+                a{
+                    display: flex;
+                    font-size: 15px;
+                    font-weight: bold;
+                    align-items: center;
+                    height: 100%;
+                    color: black;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+            }
+        }
+
+       
+
+    }
+
+    .right{
+        height: 100%;
+        width: 25%;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        i{
+            font-size: 17px;
+        }
+
+        .number{
+            height: 86%;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            /* border: 2px solid; */
+            background-color: var(--font2);
+            transform: skewX(-12deg);
+            /* box-shadow:inset 1px 1px 1px var(--font4),inset -1px -1px 1px var(--font4); */
+            h4{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                
+            }
+            i{
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+.body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.theconversation.com/files/379026/original/file-20210115-21-90wsyw.jpg?ixlib=rb-4.1.0&rect=7%2C131%2C4876%2C2438&q=45&auto=format&w=1356&h=668&fit=crop");
+
+}
+
+.yellow{
+    /* background-color: var(--bodycolor); */
+    /* opacity: 82%; */
+    clip-path: polygon(0 0, 65% 0, 56% 100%, 0% 100%);
+    background-image: linear-gradient(120deg,rgb(249, 204, 98),rgb(243, 162, 48),rgba(248, 140, 24, 0.822));
+    /* background-image: linear-gradient(120deg,yellow,rgb(225, 152, 15)); */
+    /* backface-visibility: hidden; */
+    opacity: 100 %;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+
+}
+#text{
+    opacity: 100%;
+
+}
